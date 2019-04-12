@@ -1,0 +1,13 @@
+<div class="login-box">
+  <h1>Login</h1>
+  
+  <div class="textbox">
+    <input type="text" placeholder="Username" #userEmail required>
+  </div>
+  <div class="textbox">
+    <input type="password" placeholder="Password" #userPassword required> 
+  </div>
+
+  <button class="btn" (click)="authService.login(userEmail.value,userPassword.value)">Login</button>
+  <button class="btn" (click)="authService.googleLogin()" >Google</button>
+</div>
